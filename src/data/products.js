@@ -1,0 +1,123 @@
+// Sample Amazon products for testing barcode scanning and billing
+const products = [
+  {
+    id: 1,
+    barcode: '8901030865640',
+    name: 'Colgate MaxFresh Toothpaste',
+    brand: 'Colgate',
+    category: 'Personal Care',
+    price: 155,
+    gstRate: 18,
+    image: 'https://m.media-amazon.com/images/I/51Zy3iMFVzL._SL1000_.jpg',
+    description: '150g, Blue Gel Paste',
+  },
+  {
+    id: 2,
+    barcode: '8901058847154',
+    name: 'Maggi 2-Minute Noodles',
+    brand: 'Maggi',
+    category: 'Food',
+    price: 56,
+    gstRate: 12,
+    image: 'https://m.media-amazon.com/images/I/71PjGbMBzAL._SL1500_.jpg',
+    description: 'Masala, 280g (4 Pack)',
+  },
+  {
+    id: 3,
+    barcode: '8901262150309',
+    name: 'Cadbury Dairy Milk Silk',
+    brand: 'Cadbury',
+    category: 'Food',
+    price: 199,
+    gstRate: 12,
+    image: 'https://m.media-amazon.com/images/I/71oGnSh2caL._SL1500_.jpg',
+    description: 'Oreo, 130g',
+  },
+  {
+    id: 4,
+    barcode: '8901499006400',
+    name: 'Parle-G Gold Biscuits',
+    brand: 'Parle',
+    category: 'Food',
+    price: 40,
+    gstRate: 12,
+    image: 'https://m.media-amazon.com/images/I/61FQbSCCMML._SL1200_.jpg',
+    description: '500g Pack',
+  },
+  {
+    id: 5,
+    barcode: '8906002480654',
+    name: 'Surf Excel Matic Liquid',
+    brand: 'Surf Excel',
+    category: 'Household',
+    price: 399,
+    gstRate: 18,
+    image: 'https://m.media-amazon.com/images/I/61pDXkNWOkL._SL1000_.jpg',
+    description: 'Front Load, 1L',
+  },
+  {
+    id: 6,
+    barcode: '8901057535007',
+    name: 'Lays Classic Salted Chips',
+    brand: 'Lays',
+    category: 'Food',
+    price: 20,
+    gstRate: 12,
+    image: 'https://m.media-amazon.com/images/I/41mDV5Bo0pL._SL1000_.jpg',
+    description: '52g Pack',
+  },
+  {
+    id: 7,
+    barcode: '8901023021039',
+    name: 'Dettol Liquid Handwash',
+    brand: 'Dettol',
+    category: 'Personal Care',
+    price: 120,
+    gstRate: 18,
+    image: 'https://m.media-amazon.com/images/I/51rPmjIHijL._SL1100_.jpg',
+    description: 'Original, 200ml',
+  },
+  {
+    id: 8,
+    barcode: '8901725181000',
+    name: 'Amul Taaza Toned Milk',
+    brand: 'Amul',
+    category: 'Dairy',
+    price: 29,
+    gstRate: 5,
+    image: 'https://m.media-amazon.com/images/I/41yivNyHP8L._SL1000_.jpg',
+    description: '500ml Tetra Pack',
+  },
+  {
+    id: 9,
+    barcode: '8901063251106',
+    name: 'Coca-Cola Original',
+    brand: 'Coca-Cola',
+    category: 'Beverages',
+    price: 40,
+    gstRate: 28,
+    image: 'https://m.media-amazon.com/images/I/61tCMi9JhpL._SL1500_.jpg',
+    description: '750ml Bottle',
+  },
+  {
+    id: 10,
+    barcode: '8901088713619',
+    name: 'Tata Tea Gold',
+    brand: 'Tata',
+    category: 'Beverages',
+    price: 250,
+    gstRate: 5,
+    image: 'https://m.media-amazon.com/images/I/51gB6Vb5R3L._SL1100_.jpg',
+    description: '500g Pack',
+  },
+];
+
+export function getProductByBarcode(barcode) {
+  return products.find((p) => p.barcode === barcode) || null;
+}
+
+export function getAllProducts() {
+  return products;
+}
+
+export default products;
